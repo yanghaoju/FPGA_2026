@@ -1,11 +1,13 @@
-# FPGA竞赛_2026 · U126 KV260 Attention 加速器
+# ReGQA：面向嵌入式 FPGA 的分组查询注意力加速器
+
+ReGQA（Reduction-Sharing Grouped-Query Attention）采用共享归约架构，在 KV260 上加速大语言模型的分组查询注意力。设计围绕 QK/PV 共享归约数据通路、运行时因果分块调度及 Prefill–Decode KV 缓存交接展开，并结合输入打包、输出解包优化，集成 llama.cpp 完成真实模型推理。
 
 发布日期：2026-11-04。Built with Llama。
 
 独立竞赛仓库：[yanghaoju/FPGA_2026](https://github.com/yanghaoju/FPGA_2026)。
-本次代码 RAR 和单独的模型权重 RAR 统一在 [U126 提交版发布页](https://github.com/yanghaoju/FPGA_2026/releases/tag/u126-submission-20261104)提供。
+本次代码 RAR 和单独的模型权重 RAR 统一在 [ReGQA 竞赛提交版发布页](https://github.com/yanghaoju/FPGA_2026/releases/tag/u126-submission-20261104)提供。
 
-本包对应正式 U126 L512，包含已通过 2026-11-02 板端回归的输入打包与输出解包优化。硬件位流保持正式 U126；跨模型、LUT 和其他架构候选不在本版内。包内保留源码、板端运行文件、测试、构建与运行入口、许可证及身份校验文件。
+本次竞赛提交采用 ReGQA 的 U126 L512 实现；U126 是内部实现与回归标识。此版本包含已通过 2026-11-02 板端回归的输入打包与输出解包优化。硬件位流保持正式 U126；跨模型、LUT 和其他架构候选不在本版内。包内保留源码、板端运行文件、测试、构建与运行入口、许可证及身份校验文件。
 
 ## 内容与环境
 
