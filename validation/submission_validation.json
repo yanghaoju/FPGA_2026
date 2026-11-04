@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04",
+  "release": "U126_Code_Submission_20261104",
+  "canonical_payload_identity": "PASS: all prebuilt board runtime files match the previously board-tested release",
+  "u126_hook_sha256": "a0739b11b122fa626b1bec3a3ef08cb12b987611e3048ae0a51c88006cb51713",
+  "hardware_changes": "None; frozen U126 L512 hardware retained",
+  "shell_syntax": "PASS: 9 package entrypoints checked using bash -n",
+  "python_entrypoint_syntax": "PASS: 3 package entrypoints parsed",
+  "source_build": {
+    "status": "PASS",
+    "host": "Linux x86_64 / GCC 9.4.0 / CMake 3.28.6",
+    "targets": [
+      "llama-server",
+      "llama-completion",
+      "llama-tokenize"
+    ],
+    "pl_integration_enabled": false,
+    "reason": "Host check of the supplied source tree and build dependencies; XRT is unavailable on this host"
+  },
+  "source_cpu_model_smoke": {
+    "status": "PASS",
+    "model_sha256": "6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83",
+    "model_load_and_generation": "Completed with the supplied GGUF; 4 requested output tokens",
+    "performance_claim": null
+  },
+  "new_board_test_in_this_packaging_run": false,
+  "previous_board_validation_record": "validation/release_validation.json",
+  "credential_signature_scan": "PASS: no credential signatures detected in the code submission",
+  "scope": "Packaging and host-source checks do not replace new board validation of source-rebuilt binaries"
+}

@@ -1,0 +1,7 @@
+build/
+__pycache__/
+*.pyc
+*.gguf
+*.part
+*.rar
+*.zip

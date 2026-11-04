@@ -1,0 +1,24 @@
+{
+  "release_checks_date": "2026-11-02",
+  "status": "ACTIVATED_RELEASE_REGRESSION_AND_SMOKE_PASS",
+  "xclbin_sha256": "34fd414e8694597c257c19b8a8db8e3c45e7f6ececbf8fc07837789ce63a8959",
+  "runtime_sha256": "489aa59502d3cd83381cdf4dd91768d9387b5d2511d20d924ac2082362bb6871",
+  "hook_source_sha256": "a0739b11b122fa626b1bec3a3ef08cb12b987611e3048ae0a51c88006cb51713",
+  "previous_checks": [
+    {
+      "length": 128,
+      "decode_steps": 8,
+      "logits_sha256": "70ebdef993ac40d2229e49bc11b203a374ff95c03b5dbd053441e47dff1ea993",
+      "tokens_sha256": "06d8a4d39821e91029b2324ebff86a5b1cd8fa94acc759e3b4c3aef2cdb39fc8"
+    },
+    {
+      "length": 512,
+      "decode_steps": 0,
+      "logits_sha256": "98879a26d3ebc4ffb265285a8e08cd7b41efcc03a6d1f5d1a30998640d60ccaa",
+      "tokens_sha256": "f94ee7b45cadea85cdad197e9bd7b133485861dcce079912993909d5edb785d6"
+    }
+  ],
+  "server_smoke": "PASS_8_GENERATED_TOKENS_STRICT_PL",
+  "scope": "Previously completed on-board regression for the supplied prebuilt payload. Submission packaging has not itself rerun these board tests.",
+  "source_record_sha256": "dce54a6caf142390da7e8b92fcded0a51d1e6b45d3c004115e9307034ac3c895"
+}

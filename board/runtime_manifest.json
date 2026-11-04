@@ -1,0 +1,49 @@
+{
+  "target": {
+    "architecture": "AArch64",
+    "os": "Ubuntu 22.04.5 LTS",
+    "xrt": "2.13.0",
+    "board": "AMD/Xilinx KV260/K26"
+  },
+  "runtime_source": "Downloaded from the pack+hoist U126 release activated after KV260 regression and strict-PL smoke on 2026-11-02.",
+  "release_id": "pack_hoist_20261102",
+  "release_validation": "ACTIVATED_RELEASE_REGRESSION_AND_SMOKE_PASS",
+  "source_commit": null,
+  "source_commit_note": "The exact llama.cpp source commit for these prebuilt board binaries was not recoverable; do not claim a verified commit.",
+  "files": {
+    "bin/llama-server": {
+      "bytes": 15064,
+      "sha256": "1417cd3f62b82bebb05172f99c47cc85a315f9eebf904ad89907fff3694fe8ec"
+    },
+    "lib/libllama-server-impl.so": {
+      "bytes": 6904344,
+      "sha256": "9e523920c1f3737fd75bd6d20bf2216c45447304370df3257bac157843798a28"
+    },
+    "lib/libllama-common.so.0": {
+      "bytes": 5376952,
+      "sha256": "553622b3f6a295e73ed1252ecd1007556d4fd330e9bea21325d283505daac01d"
+    },
+    "lib/libllama.so.0": {
+      "bytes": 3679512,
+      "sha256": "3a7ecc5010f1870dea66ae25cadd75f0cb619058bdff5fdf740ebbd680977258"
+    },
+    "lib/libmtmd.so.0": {
+      "bytes": 1280344,
+      "sha256": "5031b8f58c0e86411a2913df726eaf254ed4e6d8ec20c266bf637286e361bb3e"
+    },
+    "lib/libggml.so.0": {
+      "bytes": 48576,
+      "sha256": "b6090c4e54b11f1a3f089eb8f977e13ce067dfae252646920ea6759fad9af7ad"
+    },
+    "lib/libggml-base.so.0": {
+      "bytes": 820472,
+      "sha256": "c1db46a9ed6bb10509f87ca4d9792ed2f4c4e383110be64b587548f7eb57a305"
+    },
+    "lib/libggml-cpu.so.0.17.0": {
+      "bytes": 999448,
+      "sha256": "489aa59502d3cd83381cdf4dd91768d9387b5d2511d20d924ac2082362bb6871",
+      "note": "Pack+hoist library activated on KV260 after L128 Prefill+Decode, L512 Prefill, logits/replay-token identity, and strict-PL smoke gates; formal performance claims remain tied to paired experiments."
+    }
+  },
+  "license": "MIT; see ../licenses/llama.cpp-MIT-LICENSE.txt"
+}

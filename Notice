@@ -1,0 +1,7 @@
+Built with Llama
+
+Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.
+
+The GGUF model is distributed separately. See licenses/Llama-3.2-LICENSE.txt and licenses/Llama-3.2-USE_POLICY.md.
+llama.cpp and its vendored dependencies retain their original licenses. See llama.cpp/LICENSE, llama.cpp/licenses, and the respective vendor directories.
+No new blanket license is applied to the project-authored hardware or integration code by this release packaging.

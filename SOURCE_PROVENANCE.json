@@ -1,0 +1,12 @@
+{
+  "release": "U126_Code_Submission_20261104",
+  "project_source_snapshot_commit": "ec60a2cdbc5158b736fef403d14a25ee2c238897",
+  "llama_integration_patch_sha256": "70260d5e8811576891e7a5329d5bac55f8a1e980454931642eb22682f977aca4",
+  "u126_hook_sha256": "a0739b11b122fa626b1bec3a3ef08cb12b987611e3048ae0a51c88006cb51713",
+  "hardware_source": "Frozen U126 L512 from the verified 2026-11-03 release; no research candidate merged.",
+  "runtime_release": "pack_hoist_20261102",
+  "prebuilt_binary_upstream_commit": null,
+  "provenance_note": "The project source snapshot and U126 overlay are supplied for rebuilding. The exact upstream commit used for the prebuilt board libraries was not recoverable; source rebuilds are not claimed to be bit-identical to those libraries.",
+  "source_selection": "llama.cpp core, build modules, tools, vendor dependencies, grammars and runtime scripts. Upstream development infrastructure, examples, tests, manuals, media, and the disabled UI frontend are omitted. Required native UI embed/build helpers are retained. The supplied options build the API server without an embedded browser UI.",
+  "github_repository": "https://github.com/yanghaoju/FPGA_2026"
+}

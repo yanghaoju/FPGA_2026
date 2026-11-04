@@ -1,0 +1,21 @@
+{
+  "release_profile": "U126_L512",
+  "device": "xck26-sfvc784-2LV-c",
+  "tools": "Vitis/Vivado/Vitis HLS 2022.2",
+  "kernel": "int8_gqa_prefill_decode_ip",
+  "modes": {
+    "0": "Prefill",
+    "1": "Decode"
+  },
+  "q_heads": 32,
+  "kv_heads": 8,
+  "gqa_group": 4,
+  "head_dim": 64,
+  "max_kv_tokens": 512,
+  "runtime_prefill_length": [
+    1,
+    512
+  ],
+  "precision": "BF16 tensor I/O; FP32 attention computation and online-softmax state. The historical kernel name is not an INT8 arithmetic claim.",
+  "xclbin_sha256": "34fd414e8694597c257c19b8a8db8e3c45e7f6ececbf8fc07837789ce63a8959"
+}
